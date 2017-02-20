@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE377C931E5B215E00D22AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE377C921E5B215E00D22AD5 /* Assets.xcassets */; };
+		AE377CA61E5B231100D22AD5 /* HTCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377C9A1E5B231100D22AD5 /* HTCustomTabBar.m */; };
+		AE377CA71E5B231100D22AD5 /* HTCustomTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377C9C1E5B231100D22AD5 /* HTCustomTabBarButton.m */; };
+		AE377CA81E5B231100D22AD5 /* HTCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377C9E1E5B231100D22AD5 /* HTCustomTabBarController.m */; };
+		AE377CA91E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CA01E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.m */; };
+		AE377CAA1E5B231100D22AD5 /* HTConfigBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CA31E5B231100D22AD5 /* HTConfigBaseNavigationController.m */; };
+		AE377CAB1E5B231100D22AD5 /* HTTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CA51E5B231100D22AD5 /* HTTabBarControllerConfig.m */; };
+		AE377CC51E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CC41E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m */; };
+		AE377CD41E5B340900D22AD5 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CD31E5B340900D22AD5 /* UIImage+Tint.m */; };
+		AE72F9571E5B45ED0057C9D8 /* ViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9561E5B45ED0057C9D8 /* ViewModelServicesImpl.m */; };
+		AE72F95E1E5B51CA0057C9D8 /* MainHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F95D1E5B51CA0057C9D8 /* MainHomeController.m */; };
+		AE72F9641E5B51E80057C9D8 /* MainHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9631E5B51E80057C9D8 /* MainHomeModel.m */; };
+		AE72F9681E5B52360057C9D8 /* MainHomeProtocolImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9671E5B52360057C9D8 /* MainHomeProtocolImpl.m */; };
+		AE72F96A1E5B52410057C9D8 /* MainHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9691E5B52410057C9D8 /* MainHomeViewModel.m */; };
+		AE72F96E1E5B52890057C9D8 /* HttpSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F96D1E5B52890057C9D8 /* HttpSessionRequest.m */; };
+		AE72F97C1E5B52F80057C9D8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F97B1E5B52F80057C9D8 /* BaseViewController.m */; };
+		AE72F9801E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F97F1E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		AE72F9841E5B591F0057C9D8 /* TableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9831E5B591F0057C9D8 /* TableViewBindingHelper.m */; };
+		AE72F98A1E5B5BC20057C9D8 /* MainHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9881E5B5BC20057C9D8 /* MainHomeCell.m */; };
+		AE72F98B1E5B5BC20057C9D8 /* MainHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE72F9891E5B5BC20057C9D8 /* MainHomeCell.xib */; };
+		AE72F98F1E5B60A40057C9D8 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F98E1E5B60A40057C9D8 /* Const.m */; };
+		AE72F9961E5B63590057C9D8 /* FindHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9951E5B63590057C9D8 /* FindHomeController.m */; };
+		AE72F9991E5B63610057C9D8 /* MineHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9981E5B63610057C9D8 /* MineHomeController.m */; };
+		AE72F99C1E5B63690057C9D8 /* PreferredHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F99B1E5B63690057C9D8 /* PreferredHomeController.m */; };
+		AE72F99F1E5B63720057C9D8 /* RecipesHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F99E1E5B63720057C9D8 /* RecipesHomeController.m */; };
+		AE8F316B1E5B10C100BE45BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F316A1E5B10C100BE45BE /* main.m */; };
+		AE8F316E1E5B10C100BE45BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F316D1E5B10C100BE45BE /* AppDelegate.m */; };
+		AE8F31741E5B10C100BE45BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8F31721E5B10C100BE45BE /* Main.storyboard */; };
+		AE8F31791E5B10C100BE45BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8F31771E5B10C100BE45BE /* LaunchScreen.storyboard */; };
+		AE8F31841E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F31831E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.m */; };
+		AE8F318F1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F318E1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.m */; };
+		BC1A4BF3FEE92D608B0C9036 /* Pods_ReactivecocoaWithMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C537BB76471A8B49D6F90DFE /* Pods_ReactivecocoaWithMVVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE8F31801E5B10C100BE45BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE8F315E1E5B10C100BE45BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE8F31651E5B10C100BE45BE;
+			remoteInfo = ReactivecocoaWithMVVM;
+		};
+		AE8F318B1E5B10C100BE45BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE8F315E1E5B10C100BE45BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE8F31651E5B10C100BE45BE;
+			remoteInfo = ReactivecocoaWithMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59E948BB1AFE66E2DFB07796 /* Pods-ReactivecocoaWithMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivecocoaWithMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactivecocoaWithMVVM/Pods-ReactivecocoaWithMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		AE377C921E5B215E00D22AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE377C991E5B231100D22AD5 /* HTCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCustomTabBar.h; sourceTree = "<group>"; };
+		AE377C9A1E5B231100D22AD5 /* HTCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCustomTabBar.m; sourceTree = "<group>"; };
+		AE377C9B1E5B231100D22AD5 /* HTCustomTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCustomTabBarButton.h; sourceTree = "<group>"; };
+		AE377C9C1E5B231100D22AD5 /* HTCustomTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCustomTabBarButton.m; sourceTree = "<group>"; };
+		AE377C9D1E5B231100D22AD5 /* HTCustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCustomTabBarController.h; sourceTree = "<group>"; };
+		AE377C9E1E5B231100D22AD5 /* HTCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCustomTabBarController.m; sourceTree = "<group>"; };
+		AE377C9F1E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HTTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		AE377CA01E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HTTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		AE377CA21E5B231100D22AD5 /* HTConfigBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTConfigBaseNavigationController.h; sourceTree = "<group>"; };
+		AE377CA31E5B231100D22AD5 /* HTConfigBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTConfigBaseNavigationController.m; sourceTree = "<group>"; };
+		AE377CA41E5B231100D22AD5 /* HTTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTabBarControllerConfig.h; sourceTree = "<group>"; };
+		AE377CA51E5B231100D22AD5 /* HTTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTabBarControllerConfig.m; sourceTree = "<group>"; };
+		AE377CC01E5B24A600D22AD5 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		AE377CC11E5B259A00D22AD5 /* ReactivecocoaWithMVVM.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactivecocoaWithMVVM.pch; sourceTree = "<group>"; };
+		AE377CC31E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HTBarButtonCustom.h"; sourceTree = "<group>"; };
+		AE377CC41E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HTBarButtonCustom.m"; sourceTree = "<group>"; };
+		AE377CD21E5B340900D22AD5 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		AE377CD31E5B340900D22AD5 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		AE72F9541E5B45300057C9D8 /* ViewModelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelService.h; sourceTree = "<group>"; };
+		AE72F9551E5B45ED0057C9D8 /* ViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelServicesImpl.h; sourceTree = "<group>"; };
+		AE72F9561E5B45ED0057C9D8 /* ViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelServicesImpl.m; sourceTree = "<group>"; };
+		AE72F95C1E5B51CA0057C9D8 /* MainHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeController.h; sourceTree = "<group>"; };
+		AE72F95D1E5B51CA0057C9D8 /* MainHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeController.m; sourceTree = "<group>"; };
+		AE72F95F1E5B51E10057C9D8 /* MainHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeViewModel.h; sourceTree = "<group>"; };
+		AE72F9621E5B51E80057C9D8 /* MainHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeModel.h; sourceTree = "<group>"; };
+		AE72F9631E5B51E80057C9D8 /* MainHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeModel.m; sourceTree = "<group>"; };
+		AE72F9651E5B52360057C9D8 /* MainHomeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeProtocol.h; sourceTree = "<group>"; };
+		AE72F9661E5B52360057C9D8 /* MainHomeProtocolImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeProtocolImpl.h; sourceTree = "<group>"; };
+		AE72F9671E5B52360057C9D8 /* MainHomeProtocolImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeProtocolImpl.m; sourceTree = "<group>"; };
+		AE72F9691E5B52410057C9D8 /* MainHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeViewModel.m; sourceTree = "<group>"; };
+		AE72F96C1E5B52890057C9D8 /* HttpSessionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpSessionRequest.h; sourceTree = "<group>"; };
+		AE72F96D1E5B52890057C9D8 /* HttpSessionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpSessionRequest.m; sourceTree = "<group>"; };
+		AE72F97A1E5B52F80057C9D8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		AE72F97B1E5B52F80057C9D8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		AE72F97E1E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		AE72F97F1E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		AE72F9821E5B591F0057C9D8 /* TableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewBindingHelper.h; sourceTree = "<group>"; };
+		AE72F9831E5B591F0057C9D8 /* TableViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewBindingHelper.m; sourceTree = "<group>"; };
+		AE72F9851E5B599A0057C9D8 /* ReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveView.h; sourceTree = "<group>"; };
+		AE72F9871E5B5BC20057C9D8 /* MainHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeCell.h; sourceTree = "<group>"; };
+		AE72F9881E5B5BC20057C9D8 /* MainHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeCell.m; sourceTree = "<group>"; };
+		AE72F9891E5B5BC20057C9D8 /* MainHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainHomeCell.xib; sourceTree = "<group>"; };
+		AE72F98D1E5B60A40057C9D8 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		AE72F98E1E5B60A40057C9D8 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
+		AE72F9941E5B63590057C9D8 /* FindHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindHomeController.h; sourceTree = "<group>"; };
+		AE72F9951E5B63590057C9D8 /* FindHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindHomeController.m; sourceTree = "<group>"; };
+		AE72F9971E5B63610057C9D8 /* MineHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHomeController.h; sourceTree = "<group>"; };
+		AE72F9981E5B63610057C9D8 /* MineHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHomeController.m; sourceTree = "<group>"; };
+		AE72F99A1E5B63690057C9D8 /* PreferredHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferredHomeController.h; sourceTree = "<group>"; };
+		AE72F99B1E5B63690057C9D8 /* PreferredHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferredHomeController.m; sourceTree = "<group>"; };
+		AE72F99D1E5B63720057C9D8 /* RecipesHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesHomeController.h; sourceTree = "<group>"; };
+		AE72F99E1E5B63720057C9D8 /* RecipesHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesHomeController.m; sourceTree = "<group>"; };
+		AE8F31661E5B10C100BE45BE /* ReactivecocoaWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivecocoaWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8F316A1E5B10C100BE45BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE8F316C1E5B10C100BE45BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE8F316D1E5B10C100BE45BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE8F31731E5B10C100BE45BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE8F31781E5B10C100BE45BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE8F317A1E5B10C100BE45BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8F317F1E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactivecocoaWithMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8F31831E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactivecocoaWithMVVMTests.m; sourceTree = "<group>"; };
+		AE8F31851E5B10C100BE45BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8F318A1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactivecocoaWithMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8F318E1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactivecocoaWithMVVMUITests.m; sourceTree = "<group>"; };
+		AE8F31901E5B10C100BE45BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C28E719967B1240857D661 /* Pods-ReactivecocoaWithMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivecocoaWithMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactivecocoaWithMVVM/Pods-ReactivecocoaWithMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		C537BB76471A8B49D6F90DFE /* Pods_ReactivecocoaWithMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactivecocoaWithMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE8F31631E5B10C100BE45BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1A4BF3FEE92D608B0C9036 /* Pods_ReactivecocoaWithMVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F317C1E5B10C100BE45BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F31871E5B10C100BE45BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D13EE2DCB3D8C83C62359F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59E948BB1AFE66E2DFB07796 /* Pods-ReactivecocoaWithMVVM.debug.xcconfig */,
+				B6C28E719967B1240857D661 /* Pods-ReactivecocoaWithMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE377C981E5B231100D22AD5 /* HTTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				AE377C991E5B231100D22AD5 /* HTCustomTabBar.h */,
+				AE377C9A1E5B231100D22AD5 /* HTCustomTabBar.m */,
+				AE377C9B1E5B231100D22AD5 /* HTCustomTabBarButton.h */,
+				AE377C9C1E5B231100D22AD5 /* HTCustomTabBarButton.m */,
+				AE377C9D1E5B231100D22AD5 /* HTCustomTabBarController.h */,
+				AE377C9E1E5B231100D22AD5 /* HTCustomTabBarController.m */,
+				AE377C9F1E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.h */,
+				AE377CA01E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.m */,
+			);
+			name = HTTabBarController;
+			path = ../HTTabBarController;
+			sourceTree = "<group>";
+		};
+		AE377CA11E5B231100D22AD5 /* TabBarConfig */ = {
+			isa = PBXGroup;
+			children = (
+				AE377CA21E5B231100D22AD5 /* HTConfigBaseNavigationController.h */,
+				AE377CA31E5B231100D22AD5 /* HTConfigBaseNavigationController.m */,
+				AE377CA41E5B231100D22AD5 /* HTTabBarControllerConfig.h */,
+				AE377CA51E5B231100D22AD5 /* HTTabBarControllerConfig.m */,
+			);
+			name = TabBarConfig;
+			path = ../TabBarConfig;
+			sourceTree = "<group>";
+		};
+		AE377CBF1E5B248E00D22AD5 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				AE377CA11E5B231100D22AD5 /* TabBarConfig */,
+				AE377C981E5B231100D22AD5 /* HTTabBarController */,
+				AE72F97D1E5B53200057C9D8 /* FDFullscreenPopGesture */,
+				AE377CC21E5B272500D22AD5 /* Category */,
+				AE377CC01E5B24A600D22AD5 /* Config.h */,
+				AE72F98D1E5B60A40057C9D8 /* Const.h */,
+				AE72F98E1E5B60A40057C9D8 /* Const.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		AE377CC21E5B272500D22AD5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AE377CD21E5B340900D22AD5 /* UIImage+Tint.h */,
+				AE377CD31E5B340900D22AD5 /* UIImage+Tint.m */,
+				AE377CC31E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.h */,
+				AE377CC41E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AE72F9531E5B45070057C9D8 /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F9541E5B45300057C9D8 /* ViewModelService.h */,
+				AE72F9551E5B45ED0057C9D8 /* ViewModelServicesImpl.h */,
+				AE72F9561E5B45ED0057C9D8 /* ViewModelServicesImpl.m */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		AE72F9581E5B51790057C9D8 /* MainHome */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F9861E5B5BAE0057C9D8 /* View */,
+				AE72F95B1E5B51A40057C9D8 /* ViewModel */,
+				AE72F95A1E5B519A0057C9D8 /* Model */,
+				AE72F9591E5B518F0057C9D8 /* ViewController */,
+			);
+			path = MainHome;
+			sourceTree = "<group>";
+		};
+		AE72F9591E5B518F0057C9D8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F95C1E5B51CA0057C9D8 /* MainHomeController.h */,
+				AE72F95D1E5B51CA0057C9D8 /* MainHomeController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AE72F95A1E5B519A0057C9D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F9621E5B51E80057C9D8 /* MainHomeModel.h */,
+				AE72F9631E5B51E80057C9D8 /* MainHomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE72F95B1E5B51A40057C9D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F95F1E5B51E10057C9D8 /* MainHomeViewModel.h */,
+				AE72F9691E5B52410057C9D8 /* MainHomeViewModel.m */,
+				AE72F9651E5B52360057C9D8 /* MainHomeProtocol.h */,
+				AE72F9661E5B52360057C9D8 /* MainHomeProtocolImpl.h */,
+				AE72F9671E5B52360057C9D8 /* MainHomeProtocolImpl.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE72F96B1E5B527A0057C9D8 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F96C1E5B52890057C9D8 /* HttpSessionRequest.h */,
+				AE72F96D1E5B52890057C9D8 /* HttpSessionRequest.m */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		AE72F9791E5B52E70057C9D8 /* BasicDependence */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F97A1E5B52F80057C9D8 /* BaseViewController.h */,
+				AE72F97B1E5B52F80057C9D8 /* BaseViewController.m */,
+			);
+			path = BasicDependence;
+			sourceTree = "<group>";
+		};
+		AE72F97D1E5B53200057C9D8 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F97E1E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.h */,
+				AE72F97F1E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		AE72F9811E5B590E0057C9D8 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F9851E5B599A0057C9D8 /* ReactiveView.h */,
+				AE72F9821E5B591F0057C9D8 /* TableViewBindingHelper.h */,
+				AE72F9831E5B591F0057C9D8 /* TableViewBindingHelper.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		AE72F9861E5B5BAE0057C9D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F9871E5B5BC20057C9D8 /* MainHomeCell.h */,
+				AE72F9881E5B5BC20057C9D8 /* MainHomeCell.m */,
+				AE72F9891E5B5BC20057C9D8 /* MainHomeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE72F9901E5B62E90057C9D8 /* FindHome */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F9941E5B63590057C9D8 /* FindHomeController.h */,
+				AE72F9951E5B63590057C9D8 /* FindHomeController.m */,
+			);
+			path = FindHome;
+			sourceTree = "<group>";
+		};
+		AE72F9911E5B62FA0057C9D8 /* PreferredHome */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F99A1E5B63690057C9D8 /* PreferredHomeController.h */,
+				AE72F99B1E5B63690057C9D8 /* PreferredHomeController.m */,
+			);
+			path = PreferredHome;
+			sourceTree = "<group>";
+		};
+		AE72F9921E5B63080057C9D8 /* RecipesHome */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F99D1E5B63720057C9D8 /* RecipesHomeController.h */,
+				AE72F99E1E5B63720057C9D8 /* RecipesHomeController.m */,
+			);
+			path = RecipesHome;
+			sourceTree = "<group>";
+		};
+		AE72F9931E5B63150057C9D8 /* MineHome */ = {
+			isa = PBXGroup;
+			children = (
+				AE72F9971E5B63610057C9D8 /* MineHomeController.h */,
+				AE72F9981E5B63610057C9D8 /* MineHomeController.m */,
+			);
+			path = MineHome;
+			sourceTree = "<group>";
+		};
+		AE8F315D1E5B10C100BE45BE = {
+			isa = PBXGroup;
+			children = (
+				AE8F31681E5B10C100BE45BE /* ReactivecocoaWithMVVM */,
+				AE8F31821E5B10C100BE45BE /* ReactivecocoaWithMVVMTests */,
+				AE8F318D1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests */,
+				AE8F31671E5B10C100BE45BE /* Products */,
+				0D13EE2DCB3D8C83C62359F4 /* Pods */,
+				E605356079CF8219908EE0AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE8F31671E5B10C100BE45BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F31661E5B10C100BE45BE /* ReactivecocoaWithMVVM.app */,
+				AE8F317F1E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.xctest */,
+				AE8F318A1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE8F31681E5B10C100BE45BE /* ReactivecocoaWithMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AE377CBF1E5B248E00D22AD5 /* Tool */,
+				AE72F9531E5B45070057C9D8 /* BaseViewModel */,
+				AE72F9811E5B590E0057C9D8 /* BaseView */,
+				AE72F9791E5B52E70057C9D8 /* BasicDependence */,
+				AE72F96B1E5B527A0057C9D8 /* Interface */,
+				AE72F9581E5B51790057C9D8 /* MainHome */,
+				AE72F9931E5B63150057C9D8 /* MineHome */,
+				AE72F9921E5B63080057C9D8 /* RecipesHome */,
+				AE72F9911E5B62FA0057C9D8 /* PreferredHome */,
+				AE72F9901E5B62E90057C9D8 /* FindHome */,
+				AE8F31721E5B10C100BE45BE /* Main.storyboard */,
+				AE8F31771E5B10C100BE45BE /* LaunchScreen.storyboard */,
+				AE8F316C1E5B10C100BE45BE /* AppDelegate.h */,
+				AE8F316D1E5B10C100BE45BE /* AppDelegate.m */,
+				AE377C921E5B215E00D22AD5 /* Assets.xcassets */,
+				AE8F317A1E5B10C100BE45BE /* Info.plist */,
+				AE8F31691E5B10C100BE45BE /* Supporting Files */,
+				AE377CC11E5B259A00D22AD5 /* ReactivecocoaWithMVVM.pch */,
+			);
+			path = ReactivecocoaWithMVVM;
+			sourceTree = "<group>";
+		};
+		AE8F31691E5B10C100BE45BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F316A1E5B10C100BE45BE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE8F31821E5B10C100BE45BE /* ReactivecocoaWithMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F31831E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.m */,
+				AE8F31851E5B10C100BE45BE /* Info.plist */,
+			);
+			path = ReactivecocoaWithMVVMTests;
+			sourceTree = "<group>";
+		};
+		AE8F318D1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F318E1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.m */,
+				AE8F31901E5B10C100BE45BE /* Info.plist */,
+			);
+			path = ReactivecocoaWithMVVMUITests;
+			sourceTree = "<group>";
+		};
+		E605356079CF8219908EE0AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C537BB76471A8B49D6F90DFE /* Pods_ReactivecocoaWithMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE8F31651E5B10C100BE45BE /* ReactivecocoaWithMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8F31931E5B10C100BE45BE /* Build configuration list for PBXNativeTarget "ReactivecocoaWithMVVM" */;
+			buildPhases = (
+				833EB131C19417D2D81D7C73 /* [CP] Check Pods Manifest.lock */,
+				AE8F31621E5B10C100BE45BE /* Sources */,
+				AE8F31631E5B10C100BE45BE /* Frameworks */,
+				AE8F31641E5B10C100BE45BE /* Resources */,
+				B449678B42182AB6C8022850 /* [CP] Embed Pods Frameworks */,
+				35F7A7F0E8F29F873E405957 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactivecocoaWithMVVM;
+			productName = ReactivecocoaWithMVVM;
+			productReference = AE8F31661E5B10C100BE45BE /* ReactivecocoaWithMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE8F317E1E5B10C100BE45BE /* ReactivecocoaWithMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8F31961E5B10C100BE45BE /* Build configuration list for PBXNativeTarget "ReactivecocoaWithMVVMTests" */;
+			buildPhases = (
+				AE8F317B1E5B10C100BE45BE /* Sources */,
+				AE8F317C1E5B10C100BE45BE /* Frameworks */,
+				AE8F317D1E5B10C100BE45BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE8F31811E5B10C100BE45BE /* PBXTargetDependency */,
+			);
+			name = ReactivecocoaWithMVVMTests;
+			productName = ReactivecocoaWithMVVMTests;
+			productReference = AE8F317F1E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE8F31891E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8F31991E5B10C100BE45BE /* Build configuration list for PBXNativeTarget "ReactivecocoaWithMVVMUITests" */;
+			buildPhases = (
+				AE8F31861E5B10C100BE45BE /* Sources */,
+				AE8F31871E5B10C100BE45BE /* Frameworks */,
+				AE8F31881E5B10C100BE45BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE8F318C1E5B10C100BE45BE /* PBXTargetDependency */,
+			);
+			name = ReactivecocoaWithMVVMUITests;
+			productName = ReactivecocoaWithMVVMUITests;
+			productReference = AE8F318A1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE8F315E1E5B10C100BE45BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "上海方创金融信息服务股份有限公司";
+				TargetAttributes = {
+					AE8F31651E5B10C100BE45BE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AWA9R9FXT6;
+						ProvisioningStyle = Automatic;
+					};
+					AE8F317E1E5B10C100BE45BE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AWA9R9FXT6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE8F31651E5B10C100BE45BE;
+					};
+					AE8F31891E5B10C100BE45BE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AWA9R9FXT6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE8F31651E5B10C100BE45BE;
+					};
+				};
+			};
+			buildConfigurationList = AE8F31611E5B10C100BE45BE /* Build configuration list for PBXProject "ReactivecocoaWithMVVM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE8F315D1E5B10C100BE45BE;
+			productRefGroup = AE8F31671E5B10C100BE45BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE8F31651E5B10C100BE45BE /* ReactivecocoaWithMVVM */,
+				AE8F317E1E5B10C100BE45BE /* ReactivecocoaWithMVVMTests */,
+				AE8F31891E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE8F31641E5B10C100BE45BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8F31791E5B10C100BE45BE /* LaunchScreen.storyboard in Resources */,
+				AE377C931E5B215E00D22AD5 /* Assets.xcassets in Resources */,
+				AE8F31741E5B10C100BE45BE /* Main.storyboard in Resources */,
+				AE72F98B1E5B5BC20057C9D8 /* MainHomeCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F317D1E5B10C100BE45BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F31881E5B10C100BE45BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35F7A7F0E8F29F873E405957 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactivecocoaWithMVVM/Pods-ReactivecocoaWithMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833EB131C19417D2D81D7C73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B449678B42182AB6C8022850 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactivecocoaWithMVVM/Pods-ReactivecocoaWithMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE8F31621E5B10C100BE45BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE377CD41E5B340900D22AD5 /* UIImage+Tint.m in Sources */,
+				AE72F95E1E5B51CA0057C9D8 /* MainHomeController.m in Sources */,
+				AE377CA81E5B231100D22AD5 /* HTCustomTabBarController.m in Sources */,
+				AE377CA91E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.m in Sources */,
+				AE72F9991E5B63610057C9D8 /* MineHomeController.m in Sources */,
+				AE377CA71E5B231100D22AD5 /* HTCustomTabBarButton.m in Sources */,
+				AE72F9961E5B63590057C9D8 /* FindHomeController.m in Sources */,
+				AE72F9841E5B591F0057C9D8 /* TableViewBindingHelper.m in Sources */,
+				AE72F99C1E5B63690057C9D8 /* PreferredHomeController.m in Sources */,
+				AE72F9571E5B45ED0057C9D8 /* ViewModelServicesImpl.m in Sources */,
+				AE72F96E1E5B52890057C9D8 /* HttpSessionRequest.m in Sources */,
+				AE72F9641E5B51E80057C9D8 /* MainHomeModel.m in Sources */,
+				AE72F98F1E5B60A40057C9D8 /* Const.m in Sources */,
+				AE72F9681E5B52360057C9D8 /* MainHomeProtocolImpl.m in Sources */,
+				AE72F99F1E5B63720057C9D8 /* RecipesHomeController.m in Sources */,
+				AE377CA61E5B231100D22AD5 /* HTCustomTabBar.m in Sources */,
+				AE72F96A1E5B52410057C9D8 /* MainHomeViewModel.m in Sources */,
+				AE8F316E1E5B10C100BE45BE /* AppDelegate.m in Sources */,
+				AE72F9801E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				AE377CC51E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m in Sources */,
+				AE377CAA1E5B231100D22AD5 /* HTConfigBaseNavigationController.m in Sources */,
+				AE8F316B1E5B10C100BE45BE /* main.m in Sources */,
+				AE377CAB1E5B231100D22AD5 /* HTTabBarControllerConfig.m in Sources */,
+				AE72F97C1E5B52F80057C9D8 /* BaseViewController.m in Sources */,
+				AE72F98A1E5B5BC20057C9D8 /* MainHomeCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F317B1E5B10C100BE45BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8F31841E5B10C100BE45BE /* ReactivecocoaWithMVVMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8F31861E5B10C100BE45BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE8F318F1E5B10C100BE45BE /* ReactivecocoaWithMVVMUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE8F31811E5B10C100BE45BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE8F31651E5B10C100BE45BE /* ReactivecocoaWithMVVM */;
+			targetProxy = AE8F31801E5B10C100BE45BE /* PBXContainerItemProxy */;
+		};
+		AE8F318C1E5B10C100BE45BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE8F31651E5B10C100BE45BE /* ReactivecocoaWithMVVM */;
+			targetProxy = AE8F318B1E5B10C100BE45BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE8F31721E5B10C100BE45BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE8F31731E5B10C100BE45BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE8F31771E5B10C100BE45BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE8F31781E5B10C100BE45BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE8F31911E5B10C100BE45BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE8F31921E5B10C100BE45BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE8F31941E5B10C100BE45BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E948BB1AFE66E2DFB07796 /* Pods-ReactivecocoaWithMVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReactivecocoaWithMVVM/ReactivecocoaWithMVVM.pch";
+				INFOPLIST_FILE = ReactivecocoaWithMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.ReactivecocoaWithMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE8F31951E5B10C100BE45BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C28E719967B1240857D661 /* Pods-ReactivecocoaWithMVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReactivecocoaWithMVVM/ReactivecocoaWithMVVM.pch";
+				INFOPLIST_FILE = ReactivecocoaWithMVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.ReactivecocoaWithMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE8F31971E5B10C100BE45BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				INFOPLIST_FILE = ReactivecocoaWithMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.ReactivecocoaWithMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactivecocoaWithMVVM.app/ReactivecocoaWithMVVM";
+			};
+			name = Debug;
+		};
+		AE8F31981E5B10C100BE45BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				INFOPLIST_FILE = ReactivecocoaWithMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.ReactivecocoaWithMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactivecocoaWithMVVM.app/ReactivecocoaWithMVVM";
+			};
+			name = Release;
+		};
+		AE8F319A1E5B10C100BE45BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				INFOPLIST_FILE = ReactivecocoaWithMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.ReactivecocoaWithMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReactivecocoaWithMVVM;
+			};
+			name = Debug;
+		};
+		AE8F319B1E5B10C100BE45BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AWA9R9FXT6;
+				INFOPLIST_FILE = ReactivecocoaWithMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.ReactivecocoaWithMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReactivecocoaWithMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE8F31611E5B10C100BE45BE /* Build configuration list for PBXProject "ReactivecocoaWithMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8F31911E5B10C100BE45BE /* Debug */,
+				AE8F31921E5B10C100BE45BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8F31931E5B10C100BE45BE /* Build configuration list for PBXNativeTarget "ReactivecocoaWithMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8F31941E5B10C100BE45BE /* Debug */,
+				AE8F31951E5B10C100BE45BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8F31961E5B10C100BE45BE /* Build configuration list for PBXNativeTarget "ReactivecocoaWithMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8F31971E5B10C100BE45BE /* Debug */,
+				AE8F31981E5B10C100BE45BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE8F31991E5B10C100BE45BE /* Build configuration list for PBXNativeTarget "ReactivecocoaWithMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE8F319A1E5B10C100BE45BE /* Debug */,
+				AE8F319B1E5B10C100BE45BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE8F315E1E5B10C100BE45BE /* Project object */;
+}
