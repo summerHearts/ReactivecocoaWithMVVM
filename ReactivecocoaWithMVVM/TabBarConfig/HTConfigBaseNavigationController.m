@@ -40,13 +40,13 @@
 {
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
     
-    NSDictionary *textAttributes = @{NSFontAttributeName:HTSetFont(@"Noteworthy-Bold", 18),
-                                     NSForegroundColorAttributeName: [UIColor whiteColor]
+    NSDictionary *textAttributes = @{NSFontAttributeName:HTSetFont(@"SnellRoundhand-Black", 22),
+                                     NSForegroundColorAttributeName: [UIColor blackColor]
                                     };
     
     [navigationBarAppearance setTitleTextAttributes:textAttributes];
-    navigationBarAppearance.tintColor = [UIColor whiteColor];
-    navigationBarAppearance.barTintColor = SetColor(80, 189, 203);
+    navigationBarAppearance.tintColor = [UIColor blackColor];
+    navigationBarAppearance.barTintColor = [UIColor whiteColor];
 }
 - (void)setUpCustomNavigationBarWithViewController:(UIViewController *)viewController
 {
@@ -60,6 +60,6 @@
 #pragma mark - UIStatusBar
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 @end

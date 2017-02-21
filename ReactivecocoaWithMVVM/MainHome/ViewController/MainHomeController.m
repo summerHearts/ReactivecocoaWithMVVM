@@ -40,6 +40,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"DayDayCook";
+    
      [self.mainHomeViewModel.mainHomeCommand execute:@1];
     
     //绑定数据源
@@ -49,6 +51,8 @@
     [self.bannerView.delegateSubject subscribeNext:^(id x) {
         NSLog(@"点击了图片");
     }];
+    
+
     
     //tableView的绑定
     self.tableViewBindingHelper = [TableViewBindingHelper bindingHelperForTableView:self.tableView sourceSignal:RACObserve(self.mainHomeViewModel, mainHomeModel.data) selectionCommand:nil templateCell:@[@"RecommendTableViewCell",@"MainHomeCell"] withViewModel:self.mainHomeViewModel];
@@ -86,5 +90,9 @@
         HotelDetailBannerScrollView *view = [[HotelDetailBannerScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 180)];
         view;
     }));
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleDefault;
 }
 @end
