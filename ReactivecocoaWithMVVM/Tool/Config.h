@@ -11,6 +11,7 @@
 
 
 
+#define FONT(F) [UIFont systemFontOfSize:F]
 
 // 懒加载
 #define LAZYLOAD(object, assignment) (object = object ?: assignment)

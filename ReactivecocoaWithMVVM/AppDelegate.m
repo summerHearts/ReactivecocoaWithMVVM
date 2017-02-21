@@ -19,7 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    
     /*
      滚动视图
      http://api.daydaycook.com.cn/daydaycook/server/ad/listAds.do?version=2.7.1&deviceId=329040BD-EA81-4209-BF43-C213850FDE9C&languageId=3&uid=192581&regionCode=156&mainland=1

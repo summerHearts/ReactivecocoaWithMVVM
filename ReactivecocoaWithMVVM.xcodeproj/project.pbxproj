@@ -32,6 +32,8 @@
 		AE72F9991E5B63610057C9D8 /* MineHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9981E5B63610057C9D8 /* MineHomeController.m */; };
 		AE72F99C1E5B63690057C9D8 /* PreferredHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F99B1E5B63690057C9D8 /* PreferredHomeController.m */; };
 		AE72F99F1E5B63720057C9D8 /* RecipesHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F99E1E5B63720057C9D8 /* RecipesHomeController.m */; };
+		AE7FD0301E5BCE4F0056136E /* BannerImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD02D1E5BCE4F0056136E /* BannerImageScrollView.m */; };
+		AE7FD0311E5BCE4F0056136E /* HotelDetailBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD02F1E5BCE4F0056136E /* HotelDetailBannerScrollView.m */; };
 		AE8F316B1E5B10C100BE45BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F316A1E5B10C100BE45BE /* main.m */; };
 		AE8F316E1E5B10C100BE45BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F316D1E5B10C100BE45BE /* AppDelegate.m */; };
 		AE8F31741E5B10C100BE45BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8F31721E5B10C100BE45BE /* Main.storyboard */; };
@@ -113,6 +115,10 @@
 		AE72F99B1E5B63690057C9D8 /* PreferredHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferredHomeController.m; sourceTree = "<group>"; };
 		AE72F99D1E5B63720057C9D8 /* RecipesHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesHomeController.h; sourceTree = "<group>"; };
 		AE72F99E1E5B63720057C9D8 /* RecipesHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesHomeController.m; sourceTree = "<group>"; };
+		AE7FD02C1E5BCE4F0056136E /* BannerImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerImageScrollView.h; sourceTree = "<group>"; };
+		AE7FD02D1E5BCE4F0056136E /* BannerImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerImageScrollView.m; sourceTree = "<group>"; };
+		AE7FD02E1E5BCE4F0056136E /* HotelDetailBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailBannerScrollView.h; sourceTree = "<group>"; };
+		AE7FD02F1E5BCE4F0056136E /* HotelDetailBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailBannerScrollView.m; sourceTree = "<group>"; };
 		AE8F31661E5B10C100BE45BE /* ReactivecocoaWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivecocoaWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8F316A1E5B10C100BE45BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE8F316C1E5B10C100BE45BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -312,6 +318,10 @@
 				AE72F9871E5B5BC20057C9D8 /* MainHomeCell.h */,
 				AE72F9881E5B5BC20057C9D8 /* MainHomeCell.m */,
 				AE72F9891E5B5BC20057C9D8 /* MainHomeCell.xib */,
+				AE7FD02C1E5BCE4F0056136E /* BannerImageScrollView.h */,
+				AE7FD02D1E5BCE4F0056136E /* BannerImageScrollView.m */,
+				AE7FD02E1E5BCE4F0056136E /* HotelDetailBannerScrollView.h */,
+				AE7FD02F1E5BCE4F0056136E /* HotelDetailBannerScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -635,6 +645,7 @@
 				AE72F9641E5B51E80057C9D8 /* MainHomeModel.m in Sources */,
 				AE72F98F1E5B60A40057C9D8 /* Const.m in Sources */,
 				AE72F9681E5B52360057C9D8 /* MainHomeProtocolImpl.m in Sources */,
+				AE7FD0311E5BCE4F0056136E /* HotelDetailBannerScrollView.m in Sources */,
 				AE72F99F1E5B63720057C9D8 /* RecipesHomeController.m in Sources */,
 				AE377CA61E5B231100D22AD5 /* HTCustomTabBar.m in Sources */,
 				AE72F96A1E5B52410057C9D8 /* MainHomeViewModel.m in Sources */,
@@ -642,6 +653,7 @@
 				AE72F9801E5B53590057C9D8 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				AE377CC51E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m in Sources */,
 				AE377CAA1E5B231100D22AD5 /* HTConfigBaseNavigationController.m in Sources */,
+				AE7FD0301E5BCE4F0056136E /* BannerImageScrollView.m in Sources */,
 				AE8F316B1E5B10C100BE45BE /* main.m in Sources */,
 				AE377CAB1E5B231100D22AD5 /* HTTabBarControllerConfig.m in Sources */,
 				AE72F97C1E5B52F80057C9D8 /* BaseViewController.m in Sources */,

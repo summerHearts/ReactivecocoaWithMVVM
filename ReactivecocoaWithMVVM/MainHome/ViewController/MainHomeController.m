@@ -9,6 +9,7 @@
 #import "MainHomeController.h"
 #import "MainHomeViewModel.h"
 #import "MainHomeCell.h"
+#import "HotelDetailBannerScrollView.h"
 @interface MainHomeController ()
 
 @property (nonatomic,strong) MainHomeViewModel *mainHomeViewModel;
@@ -18,6 +19,8 @@
 @property (nonatomic,strong) UITableView *tableView;
 
 @property (nonatomic,strong) UIView *headerView;
+
+@property (nonatomic,strong) HotelDetailBannerScrollView *bannerView;
 
 @end
 
@@ -37,12 +40,18 @@
     
      [self.mainHomeViewModel.mainHomeCommand execute:@1];
     
+    //绑定数据源
+    [self.bannerView loadBannerSourceSignal:RACObserve(self.mainHomeViewModel, mainHomeModel.data) isLoop:YES];
     
+    //替代代理模式
+    [self.bannerView.delegateSubject subscribeNext:^(id x) {
+        
+    }];
+    
+    //tableView的绑定
     self.tableViewBindingHelper = [TableViewBindingHelper bindingHelperForTableView:self.tableView sourceSignal:RACObserve(self.mainHomeViewModel, mainHomeModel.data) selectionCommand:nil templateCell:@"MainHomeCell" withViewModel:self.mainHomeViewModel];
-
     
 }
-
 
 - (UITableView *)tableView{
     return LAZYLOAD(_tableView, ({
@@ -57,6 +66,14 @@
 - (UIView *)headerView{
     return LAZYLOAD(_headerView, ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 180)];
+        [view addSubview:self.bannerView];
+        view;
+    }));
+}
+
+- (HotelDetailBannerScrollView *)bannerView{
+    return LAZYLOAD(_bannerView, ({
+        HotelDetailBannerScrollView *view = [[HotelDetailBannerScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 180)];
         view;
     }));
 }
