@@ -17,6 +17,8 @@
 #import "Config.h"
 #import "CommonElement.h"
 #import "BaseViewController.h"
+#import "ReactiveView.h"
+
 #import "Reactivecocoa.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"

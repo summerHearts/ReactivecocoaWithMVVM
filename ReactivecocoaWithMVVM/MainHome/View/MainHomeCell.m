@@ -16,8 +16,8 @@
     // Initialization code
 }
 
-- (void)bindViewModel:(id)viewModel withParams:(NSDictionary *)params
-{
+- (void)bindViewModel:(id)viewModel withParams:(NSDictionary *)params{
+    
     MainHomeViewModel *mainHomeiewModel = viewModel;
     RecommendListData *model = mainHomeiewModel.mainHomeModel.data[[params[DataIndex] integerValue]];
     [self.contentPicImageView sd_setImageWithURL:[NSURL URLWithString:model.path] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {

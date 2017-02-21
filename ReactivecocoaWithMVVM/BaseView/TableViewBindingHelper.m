@@ -26,7 +26,7 @@
 /**
  *  cell重用标识
  */
-@property (copy, nonatomic) NSString *cellIdentifier;
+@property (copy, nonatomic) NSArray *cellIdentifierArray;
 /**
  *  viewModel
  */
@@ -34,8 +34,9 @@
 @end
 
 @implementation TableViewBindingHelper
+
 #pragma mark - init
-- (instancetype)initWithTableView:(UITableView *)tableView sourceSignal:(RACSignal *)source selectionCommand:(RACCommand *)didSelectionCommand templateCell:(NSString *)templateCell withViewModel:(id)viewModel{
+- (instancetype)initWithTableView:(UITableView *)tableView sourceSignal:(RACSignal *)source selectionCommand:(RACCommand *)didSelectionCommand templateCell:(NSArray *)templateCellArray withViewModel:(id)viewModel{
     
     if (self = [super init]) {
         
@@ -44,6 +45,7 @@
         _didSelectionCommand = didSelectionCommand;
         _viewModel = viewModel;
         
+        
         @weakify(self);
         [source subscribeNext:^(id x) {
             @strongify(self);
@@ -51,17 +53,20 @@
             [self.tableView reloadData];
         }];
         
-        _cellIdentifier = templateCell;
+        _cellIdentifierArray = templateCellArray;
         
-        
-        Class cell =  NSClassFromString(templateCell);
-        
-        UINib *nib = [UINib nibWithNibName:templateCell bundle:nil];
-        if (nib == nil) {
-            [_tableView registerClass:cell forCellReuseIdentifier:templateCell];
-        }else{
-            [_tableView registerNib:nib forCellReuseIdentifier:templateCell];
+        for (int i = 0; i< _cellIdentifierArray.count; i++) {
+            NSString *templateCell = [_cellIdentifierArray objectAtIndex:i];
+            Class cell =  NSClassFromString(templateCell);
+            
+            UINib *nib = [UINib nibWithNibName:templateCell bundle:nil];
+            if (nib == nil) {
+                [_tableView registerClass:cell forCellReuseIdentifier:templateCell];
+            }else{
+                [_tableView registerNib:nib forCellReuseIdentifier:templateCell];
+            }
         }
+      
         
         _tableView.dataSource = self;
         _tableView.delegate = self;
@@ -69,12 +74,12 @@
     }
     return self;
 }
-+ (instancetype)bindingHelperForTableView:(UITableView *)tableView sourceSignal:(RACSignal *)source selectionCommand:(RACCommand *)didSelectionCommand templateCell:(NSString *)templateCell  withViewModel:(id)viewModel
++ (instancetype)bindingHelperForTableView:(UITableView *)tableView sourceSignal:(RACSignal *)source selectionCommand:(RACCommand *)didSelectionCommand templateCell:(NSArray *)templateCellArray  withViewModel:(id)viewModel
 {
     return [[TableViewBindingHelper alloc] initWithTableView:tableView
                                                   sourceSignal:source
                                               selectionCommand:didSelectionCommand
-                                                  templateCell:templateCell
+                                                  templateCell:templateCellArray
                                                  withViewModel:viewModel];
 }
 - (void)dealloc
@@ -82,6 +87,10 @@
     self.delegate = nil;
 }
 #pragma mark - UITableViewDataSource && UITableViewDelegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -91,10 +100,31 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id<ReactiveView> cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+    if (self.cellIdentifierArray.count>1) {
+        switch (indexPath.section) {
+            case 0:{
+                id<ReactiveView> cell = [tableView dequeueReusableCellWithIdentifier:[self.cellIdentifierArray objectAtIndex:indexPath.section]];
+                [cell bindViewModel:self.viewModel withParams:@{DataIndex:@(indexPath.row)}];
+                return  (UITableViewCell *)cell;
+            }
+                break;
+            case 1:{
+                id<ReactiveView> cell = [tableView dequeueReusableCellWithIdentifier:[self.cellIdentifierArray objectAtIndex:indexPath.section]];
+                [cell bindViewModel:self.viewModel withParams:@{DataIndex:@(indexPath.row)}];
+                return  (UITableViewCell *)cell;
+            }
+                break;
+            default:
+                break;
+        }
 
-    [cell bindViewModel:self.viewModel withParams:@{DataIndex:@(indexPath.row)}];
-    return (UITableViewCell *)cell;
+    }else{
+        id<ReactiveView> cell = [tableView dequeueReusableCellWithIdentifier:[self.cellIdentifierArray objectAtIndex:0]];
+        [cell bindViewModel:self.viewModel withParams:@{DataIndex:@(indexPath.row)}];
+        return  (UITableViewCell *)cell;
+    }
+    
+    return nil;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     

@@ -15,13 +15,13 @@
 - (instancetype) initWithTableView:(UITableView *)tableView
                       sourceSignal:(RACSignal *)source
                   selectionCommand:(RACCommand *)didSelectionCommand
-                      templateCell:(NSString *)templateCell
+                      templateCell:(NSArray *)templateCellArray
                      withViewModel:(id)viewModel;
 
 + (instancetype) bindingHelperForTableView:(UITableView *)tableView
                               sourceSignal:(RACSignal *)source
                           selectionCommand:(RACCommand *)didSelectionCommand
-                              templateCell:(NSString *)templateCell
+                              templateCell:(NSArray *)templateCellArray
                              withViewModel:(id)viewModel;
 
 @end

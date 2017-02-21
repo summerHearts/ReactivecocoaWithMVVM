@@ -22,6 +22,8 @@
 
 @property (nonatomic,strong) HotelDetailBannerScrollView *bannerView;
 
+@property (nonatomic,strong) UITableView *cardTableView;
+
 @end
 
 @implementation MainHomeController
@@ -45,12 +47,11 @@
     
     //替代代理模式
     [self.bannerView.delegateSubject subscribeNext:^(id x) {
-        
+        NSLog(@"点击了图片");
     }];
     
     //tableView的绑定
-    self.tableViewBindingHelper = [TableViewBindingHelper bindingHelperForTableView:self.tableView sourceSignal:RACObserve(self.mainHomeViewModel, mainHomeModel.data) selectionCommand:nil templateCell:@"MainHomeCell" withViewModel:self.mainHomeViewModel];
-    
+    self.tableViewBindingHelper = [TableViewBindingHelper bindingHelperForTableView:self.tableView sourceSignal:RACObserve(self.mainHomeViewModel, mainHomeModel.data) selectionCommand:nil templateCell:@[@"RecommendTableViewCell",@"MainHomeCell"] withViewModel:self.mainHomeViewModel];
 }
 
 - (UITableView *)tableView{
@@ -63,6 +64,15 @@
     }));
 }
 
+- (UITableView *)cardTableView{
+    return LAZYLOAD(_cardTableView, ({
+        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+        tableView.tableHeaderView = self.headerView;
+        tableView.rowHeight = 180;
+        [self.view addSubview:tableView];
+        tableView;
+    }));
+}
 - (UIView *)headerView{
     return LAZYLOAD(_headerView, ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 180)];

@@ -34,6 +34,12 @@
 		AE72F99F1E5B63720057C9D8 /* RecipesHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F99E1E5B63720057C9D8 /* RecipesHomeController.m */; };
 		AE7FD0301E5BCE4F0056136E /* BannerImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD02D1E5BCE4F0056136E /* BannerImageScrollView.m */; };
 		AE7FD0311E5BCE4F0056136E /* HotelDetailBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD02F1E5BCE4F0056136E /* HotelDetailBannerScrollView.m */; };
+		AE7FD03A1E5BF3870056136E /* RecommendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD0381E5BF3870056136E /* RecommendTableViewCell.m */; };
+		AE7FD03B1E5BF3870056136E /* RecommendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FD0391E5BF3870056136E /* RecommendTableViewCell.xib */; };
+		AE7FD03F1E5BF4080056136E /* RecommendCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD03D1E5BF4080056136E /* RecommendCollectionViewCell.m */; };
+		AE7FD0401E5BF4080056136E /* RecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE7FD03E1E5BF4080056136E /* RecommendCollectionViewCell.xib */; };
+		AE7FD0451E5BF48D0056136E /* MRCExploreItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD0421E5BF48D0056136E /* MRCExploreItemViewModel.m */; };
+		AE7FD0461E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7FD0441E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.m */; };
 		AE8F316B1E5B10C100BE45BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F316A1E5B10C100BE45BE /* main.m */; };
 		AE8F316E1E5B10C100BE45BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8F316D1E5B10C100BE45BE /* AppDelegate.m */; };
 		AE8F31741E5B10C100BE45BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE8F31721E5B10C100BE45BE /* Main.storyboard */; };
@@ -119,6 +125,16 @@
 		AE7FD02D1E5BCE4F0056136E /* BannerImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerImageScrollView.m; sourceTree = "<group>"; };
 		AE7FD02E1E5BCE4F0056136E /* HotelDetailBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailBannerScrollView.h; sourceTree = "<group>"; };
 		AE7FD02F1E5BCE4F0056136E /* HotelDetailBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailBannerScrollView.m; sourceTree = "<group>"; };
+		AE7FD0371E5BF3870056136E /* RecommendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendTableViewCell.h; sourceTree = "<group>"; };
+		AE7FD0381E5BF3870056136E /* RecommendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendTableViewCell.m; sourceTree = "<group>"; };
+		AE7FD0391E5BF3870056136E /* RecommendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendTableViewCell.xib; sourceTree = "<group>"; };
+		AE7FD03C1E5BF4080056136E /* RecommendCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCollectionViewCell.h; sourceTree = "<group>"; };
+		AE7FD03D1E5BF4080056136E /* RecommendCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCollectionViewCell.m; sourceTree = "<group>"; };
+		AE7FD03E1E5BF4080056136E /* RecommendCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE7FD0411E5BF48D0056136E /* MRCExploreItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCExploreItemViewModel.h; sourceTree = "<group>"; };
+		AE7FD0421E5BF48D0056136E /* MRCExploreItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCExploreItemViewModel.m; sourceTree = "<group>"; };
+		AE7FD0431E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCExploreCollectionViewCellViewModel.h; sourceTree = "<group>"; };
+		AE7FD0441E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCExploreCollectionViewCellViewModel.m; sourceTree = "<group>"; };
 		AE8F31661E5B10C100BE45BE /* ReactivecocoaWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivecocoaWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8F316A1E5B10C100BE45BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE8F316C1E5B10C100BE45BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -266,6 +282,10 @@
 		AE72F95B1E5B51A40057C9D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AE7FD0411E5BF48D0056136E /* MRCExploreItemViewModel.h */,
+				AE7FD0421E5BF48D0056136E /* MRCExploreItemViewModel.m */,
+				AE7FD0431E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.h */,
+				AE7FD0441E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.m */,
 				AE72F95F1E5B51E10057C9D8 /* MainHomeViewModel.h */,
 				AE72F9691E5B52410057C9D8 /* MainHomeViewModel.m */,
 				AE72F9651E5B52360057C9D8 /* MainHomeProtocol.h */,
@@ -315,6 +335,12 @@
 		AE72F9861E5B5BAE0057C9D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE7FD0371E5BF3870056136E /* RecommendTableViewCell.h */,
+				AE7FD0381E5BF3870056136E /* RecommendTableViewCell.m */,
+				AE7FD0391E5BF3870056136E /* RecommendTableViewCell.xib */,
+				AE7FD03C1E5BF4080056136E /* RecommendCollectionViewCell.h */,
+				AE7FD03D1E5BF4080056136E /* RecommendCollectionViewCell.m */,
+				AE7FD03E1E5BF4080056136E /* RecommendCollectionViewCell.xib */,
 				AE72F9871E5B5BC20057C9D8 /* MainHomeCell.h */,
 				AE72F9881E5B5BC20057C9D8 /* MainHomeCell.m */,
 				AE72F9891E5B5BC20057C9D8 /* MainHomeCell.xib */,
@@ -555,7 +581,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7FD0401E5BF4080056136E /* RecommendCollectionViewCell.xib in Resources */,
 				AE8F31791E5B10C100BE45BE /* LaunchScreen.storyboard in Resources */,
+				AE7FD03B1E5BF3870056136E /* RecommendTableViewCell.xib in Resources */,
 				AE377C931E5B215E00D22AD5 /* Assets.xcassets in Resources */,
 				AE8F31741E5B10C100BE45BE /* Main.storyboard in Resources */,
 				AE72F98B1E5B5BC20057C9D8 /* MainHomeCell.xib in Resources */,
@@ -633,7 +661,10 @@
 			files = (
 				AE377CD41E5B340900D22AD5 /* UIImage+Tint.m in Sources */,
 				AE72F95E1E5B51CA0057C9D8 /* MainHomeController.m in Sources */,
+				AE7FD03F1E5BF4080056136E /* RecommendCollectionViewCell.m in Sources */,
+				AE7FD0461E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.m in Sources */,
 				AE377CA81E5B231100D22AD5 /* HTCustomTabBarController.m in Sources */,
+				AE7FD0451E5BF48D0056136E /* MRCExploreItemViewModel.m in Sources */,
 				AE377CA91E5B231100D22AD5 /* UIViewController+HTTabBarControllerExtention.m in Sources */,
 				AE72F9991E5B63610057C9D8 /* MineHomeController.m in Sources */,
 				AE377CA71E5B231100D22AD5 /* HTCustomTabBarButton.m in Sources */,
@@ -643,6 +674,7 @@
 				AE72F9571E5B45ED0057C9D8 /* ViewModelServicesImpl.m in Sources */,
 				AE72F96E1E5B52890057C9D8 /* HttpSessionRequest.m in Sources */,
 				AE72F9641E5B51E80057C9D8 /* MainHomeModel.m in Sources */,
+				AE7FD03A1E5BF3870056136E /* RecommendTableViewCell.m in Sources */,
 				AE72F98F1E5B60A40057C9D8 /* Const.m in Sources */,
 				AE72F9681E5B52360057C9D8 /* MainHomeProtocolImpl.m in Sources */,
 				AE7FD0311E5BCE4F0056136E /* HotelDetailBannerScrollView.m in Sources */,
