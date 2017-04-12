@@ -10,12 +10,39 @@
 
 @interface RecipesHomeController ()
 
+@property (nonatomic,strong) UITextField *textField;
+
 @end
 
 @implementation RecipesHomeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.textField = [[UITextField alloc]initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 50)];
+    self.textField.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.textField];
+    
+    
+    [[[[[[self.textField.rac_textSignal throttle:0.3]distinctUntilChanged]ignore:@""] map:^id(id value) {
+        NSLog(@">>>>>>   %@",value);
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            
+            //  network request
+            [subscriber sendNext:value];
+            [subscriber sendCompleted];
+            
+            return [RACDisposable disposableWithBlock:^{
+                
+                //  cancel request
+            }];
+        }];
+    }]switchToLatest] subscribeNext:^(id x) {
+        
+        NSLog(@"x = %@",x);
+    }];
+    
+    
     // Do any additional setup after loading the view.
 }
 

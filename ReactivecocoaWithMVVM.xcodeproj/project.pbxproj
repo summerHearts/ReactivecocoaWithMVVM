@@ -16,6 +16,7 @@
 		AE377CAB1E5B231100D22AD5 /* HTTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CA51E5B231100D22AD5 /* HTTabBarControllerConfig.m */; };
 		AE377CC51E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CC41E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m */; };
 		AE377CD41E5B340900D22AD5 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = AE377CD31E5B340900D22AD5 /* UIImage+Tint.m */; };
+		AE4E76271E5E7FDF00F3CEEC /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE4E76261E5E7FDF00F3CEEC /* flags.plist */; };
 		AE72F9571E5B45ED0057C9D8 /* ViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9561E5B45ED0057C9D8 /* ViewModelServicesImpl.m */; };
 		AE72F95E1E5B51CA0057C9D8 /* MainHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F95D1E5B51CA0057C9D8 /* MainHomeController.m */; };
 		AE72F9641E5B51E80057C9D8 /* MainHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE72F9631E5B51E80057C9D8 /* MainHomeModel.m */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		59E948BB1AFE66E2DFB07796 /* Pods-ReactivecocoaWithMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivecocoaWithMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactivecocoaWithMVVM/Pods-ReactivecocoaWithMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		AE02A4DB1E9E13E70035C431 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE377C921E5B215E00D22AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE377C991E5B231100D22AD5 /* HTCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTCustomTabBar.h; sourceTree = "<group>"; };
 		AE377C9A1E5B231100D22AD5 /* HTCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTCustomTabBar.m; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		AE377CC41E5B273200D22AD5 /* UIBarButtonItem+HTBarButtonCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HTBarButtonCustom.m"; sourceTree = "<group>"; };
 		AE377CD21E5B340900D22AD5 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
 		AE377CD31E5B340900D22AD5 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		AE4E76261E5E7FDF00F3CEEC /* flags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
 		AE72F9541E5B45300057C9D8 /* ViewModelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelService.h; sourceTree = "<group>"; };
 		AE72F9551E5B45ED0057C9D8 /* ViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelServicesImpl.h; sourceTree = "<group>"; };
 		AE72F9561E5B45ED0057C9D8 /* ViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelServicesImpl.m; sourceTree = "<group>"; };
@@ -137,7 +140,6 @@
 		AE7FD0441E5BF48D0056136E /* MRCExploreCollectionViewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCExploreCollectionViewCellViewModel.m; sourceTree = "<group>"; };
 		AE8F31661E5B10C100BE45BE /* ReactivecocoaWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivecocoaWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE8F316A1E5B10C100BE45BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AE8F316C1E5B10C100BE45BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE8F316D1E5B10C100BE45BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE8F31731E5B10C100BE45BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE8F31781E5B10C100BE45BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -425,10 +427,11 @@
 				AE72F9901E5B62E90057C9D8 /* FindHome */,
 				AE8F31721E5B10C100BE45BE /* Main.storyboard */,
 				AE8F31771E5B10C100BE45BE /* LaunchScreen.storyboard */,
-				AE8F316C1E5B10C100BE45BE /* AppDelegate.h */,
 				AE8F316D1E5B10C100BE45BE /* AppDelegate.m */,
+				AE02A4DB1E9E13E70035C431 /* AppDelegate.h */,
 				AE377C921E5B215E00D22AD5 /* Assets.xcassets */,
 				AE8F317A1E5B10C100BE45BE /* Info.plist */,
+				AE4E76261E5E7FDF00F3CEEC /* flags.plist */,
 				AE8F31691E5B10C100BE45BE /* Supporting Files */,
 				AE377CC11E5B259A00D22AD5 /* ReactivecocoaWithMVVM.pch */,
 			);
@@ -583,6 +586,7 @@
 			files = (
 				AE7FD0401E5BF4080056136E /* RecommendCollectionViewCell.xib in Resources */,
 				AE8F31791E5B10C100BE45BE /* LaunchScreen.storyboard in Resources */,
+				AE4E76271E5E7FDF00F3CEEC /* flags.plist in Resources */,
 				AE7FD03B1E5BF3870056136E /* RecommendTableViewCell.xib in Resources */,
 				AE377C931E5B215E00D22AD5 /* Assets.xcassets in Resources */,
 				AE8F31741E5B10C100BE45BE /* Main.storyboard in Resources */,
@@ -634,7 +638,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B449678B42182AB6C8022850 /* [CP] Embed Pods Frameworks */ = {

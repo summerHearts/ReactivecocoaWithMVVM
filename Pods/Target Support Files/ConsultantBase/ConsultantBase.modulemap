@@ -1,0 +1,6 @@
+framework module ConsultantBase {
+  umbrella header "ConsultantBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

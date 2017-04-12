@@ -22,7 +22,6 @@
     if (self = [super init]) {
         
         _mainHomeService = [MainHomeProtocolImpl new];
-        
     }
     return self;
 }

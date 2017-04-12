@@ -35,12 +35,11 @@
         _isSearch = visible.boolValue;
     }];
     
-    @weakify(self)
     
+    @weakify(self)
     _mainHomeCommand= [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
-        
-        return [[[_services getMainHomeRecommendService] requestMainHomeDataSignal:@"http://api.daydaycook.com.cn/daydaycook/server/ad/listAds.do?version=2.7.1&deviceId=329040BD-EA81-4209-BF43-C213850FDE9C&languageId=3&uid=192581&regionCode=156&mainland=1" params:nil] doNext:^(id  _Nullable result) {
-            @strongify(self)
+        @strongify(self)
+        return [[[_services getMainHomeRecommendService] requestMainHomeDataSignal:@"http://api.daydaycook.com.cn/daydaycook/recommend/queryRecommendAll.do?deviceId=329040BD-EA81-4209-BF43-C213850FDE9C&password=&uid=192581&username=3286288817&mainland=1&version=2.9.1&languageId=3&regionCode=156" params:nil] doNext:^(id  _Nullable result) {
             self.mainHomeModel = result;
         }];
     }];
@@ -53,8 +52,6 @@
             return nil;
         }];
     }];
-    
-    
     
     _mainHomeConnectionErrors= _mainHomeCommand.errors;
 }
